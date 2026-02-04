@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Library</title>
+</head>
+<body>
+    <header>
+        <h1 id="heading-1">Library</h1>
+        <button id="add-book-btn">Add book</button>
+    </header>
+
+    <main>
+        <dialog>
+            <form id="add-book-form" action="submit">
+
+                <div class="book-title-section">
+
+                    <label for="book-title">Title</label>
+                    <input id="book-title" type="text" name="book-title" required>
+
+                </div>
+
+                <div class="book-author-section">
+
+                    <label for="book-author">Author</label>
+                    <input id="book-author" type="text" name="book-author" required>
+
+                </div>
+
+                <div class="book-pages-section">
+
+                    <label for="book-pages">Number of pages</label>
+                    <input id="book-pages" type="number" name="book-pages" required>
+
+                </div>
+
+                <div class="read-status-section">
+
+                    <input id="read-status" type="checkbox" name="status">
+                    <label for="read-status">Have you read the Book?</label>
+
+                </div>
+
+                <div class="action-section">
+
+                    <button type="submit">Submit</button>
+                    <button type="button">Cancel</button>
+
+                </div>
+            </form>
+            
+        </dialog>
+    </main>
+</body>
+</html>
